@@ -1,72 +1,155 @@
-
 <!DOCTYPE html>
-<!-- @author derrick garadner, Portfolio Page
-Southern Illinois University  Developed: 2-20-2026  Tested: 2-20-2026  
+<!-- @author derrick gardner, Portfolio Page
+Southern Illinois University  Developed: 2-20-2026  Tested: 3-21-2026  
 -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Occupation</title> 
-        <link rel="stylesheet" href="style/main.css">
-        <link rel="stylesheet" href="style/slicknav.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-        <script src="js/jquery.slicknav.min.js"></script> 
-        <script type="text/javascript"> 
-            $(document).ready(function(){
-                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
-            }); 
-        </script>
-        <meta name="description" content="Resume"> <meta name="keywords" content="Portfolio, resume, Derrick Gardner, occupational">
-    
-    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Occupation</title> 
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.slicknav.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+        }); 
+    </script>
+    <meta name="description" content="Resume">
+    <meta name="keywords" content="Portfolio, resume, Derrick Gardner, occupational">
     <link rel="icon" type="image/png" href="images/saluki.png">
-<script src="js/rollover.js"></script>
+    <script src="js/rollover.js"></script>
 </head>
 
 <body>
-    <img class="plain-img" src="images/kappa.png" width="100px" alt="Occupation graphic">
+    <img class="plain-img occupation-graphic" src="images/kappa.png" width="100" alt="Occupation graphic">
    
-        <header>
-            <div class="bluetouch"><img data-hover="images/saluki.png" class="site-logo" src="images/dawgs.png" width="350px" alt="PP Logo"></div>
-        </header> 
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.htm" >Home</a></li>
-                <li><a href="education.htm">Education</a></li>
-                <li><a href="interests.htm">Interests</a></li>
-                <li><a href="occupation.htm"class="current">Occupation</a></li>
-                <li><a href="contact.htm" class="lastitem">Contact</a></li>
-            </ul> 
-        </nav>
-        <h1>Derrick Gardner</h1>
+    <header>
+        <div class="bluetouch"><img data-hover="images/saluki.png" class="site-logo" src="images/dawgs.png" width="350" alt="PP Logo"></div>
+    </header>
 
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="education.htm">Education</a></li>
+            <li><a href="interests.htm">Interests</a></li>
+            <li><a href="occupation.htm" class="current">Occupation</a></li>
+            <li><a href="contact.htm" class="lastitem">Contact</a></li>
+        </ul> 
+    </nav>
+
+    <main>
+        <h1>Derrick Gardner</h1>
         <h2>Occupation</h2>
 
-        <p> This site is about my <strong> work </strong> & experience.</p>
+        <p>This page highlights experiences, skills, and projects that are part of my personal portfolio.</p>
 
-        <blockquote>Work Experience</blockquote>
-        
-        <a href="https://www.siu.edu">WWW.SIU.EDU</a> 
+        <blockquote>Work Experience, Leadership, and Technical Development</blockquote>
 
-        <p> How to contact Derrick Gardner &amp; Student: </p> 
-
-        <address> 1-800-456-DCGJ <br>
-        <a href="mailto:owner@pp.com">owner@dshfte@github.io </a> 
-        </address>
-
-
-        <pre>
-Store Address:
-
-SIU
-SCHOOL OF COMPUTING
-MAIL CODE 6614
-SOUTHERN ILLINOIS UNIVERSITY
-1365 DOUGLAS DRIVE
-CARBONDALE, ILLINOIS 62901
-        </pre>
-    </body>
-
+        <div class="table-wrapper">
+            <table class="portfolio-table">
+                <caption>Portfolio Experience and Involvement Summary</caption>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Role / Activity</th>
+                        <th>Organization</th>
+                        <th>Focus</th>
+                        <th>Skills Used</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Leadership</td>
+                        <td> Corresponding Secretary</td>
+                        <td>Black Men Coalition</td>
+                        <td>Meeting records and communication</td>
+                        <td>Organization, teamwork</td>
+                        <td>Helped keep members informed and engaged</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership</td>
+                        <td>Public Relations Chair</td>
+                        <td>Black Affairs Council</td>
+                        <td>Social media and outreach</td>
+                        <td>Branding, communication</td>
+                        <td>Promoted student events to a wider audience</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership</td>
+                        <td>Director of Travel &amp; Novelties</td>
+                        <td>Student Programming Council</td>
+                        <td>Event planning and logistics</td>
+                        <td>Programming, budgeting</td>
+                        <td>Supported campus events and student engagement</td>
+                    </tr>
+                    <tr>
+                        <td>Mentoring</td>
+                        <td>Academic Peer Mentor</td>
+                        <td>Southern Illinois University </td>
+                        <td>Student support</td>
+                        <td>Guidance, problem solving</td>
+                        <td>Helped students adjust to campus and academics</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Portfolio Website</td>
+                        <td>Personal Project</td>
+                        <td>Responsive multi-page site</td>
+                        <td>HTML, CSS, design</td>
+                        <td>Showcased education, interests, and experience</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>Secure Chat Program</td>
+                        <td>Java Project</td>
+                        <td>Client-server communication</td>
+                        <td>Java, sockets, encryption</td>
+                        <td>Demonstrated basic networking and Caesar cipher use</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership</td>
+                        <td>Lt. Strategus</td>
+                        <td>Kappa Alpha Psi Fraternity Inc.</td>
+                        <td>Keep order & structure</td>
+                        <td>Management, communication </td>
+                        <td>Maintaining order, security, and protocol during meetings</td>
+                    </tr>
+                    <tr>
+                        <td>Academics</td>
+                        <td>Computer Science Major</td>
+                        <td>Southern Illinois University</td>
+                        <td>Software and computing</td>
+                        <td>Programming, critical thinking</td>
+                        <td>Developing a strong technical foundation</td>
+                    </tr>
+                    <tr>
+                        <td>Service</td>
+                        <td>Campus Involvement</td>
+                        <td>Student Organizations</td>
+                        <td>Community engagement</td>
+                        <td>Leadership, collaboration</td>
+                        <td>Built connections and leadership experience</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Growth</td>
+                        <td>Career Preparation</td>
+                        <td>Resume and Networking</td>
+                        <td>Job readiness</td>
+                        <td>Communication, professionalism</td>
+                        <td>Prepared for internships and future opportunities</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">This table summarizes major portfolio areas that reflect my education, leadership, and career development.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+</body>
 </html>
