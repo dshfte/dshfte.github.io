@@ -1,0 +1,61 @@
+/*@author: derrick gardner */
+
+@media only screen and (max-width: 2024px) {
+    #mobile_menu {display: none;}
+}
+@media only screen and (max-width: 959px) {
+    #mobile_menu {display: none;}
+}
+@media only screen and (max-width: 767px) {
+    #mobile_menu {display: block;}
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }
+    header h3 { font-size: .8125em; }
+    p { font-size: .875em; }
+    article h1, main h2, aside h2
+    { font-size: 1em; }
+    aside li { font-size: .875em; }
+}
+@media only screen and (max-width: 479px) {
+    #mobile_menu {display: block;}
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }
+    header h3 { font-size: .8125em; }
+    p { font-size: .875em; }
+    article h1, main h2, aside h2
+    { font-size: 1em; }
+    aside li { font-size: .875em; }
+}
+
+/* the style for the body */
+body {
+    width: 725px;
+    background-color:rgb(150, 75, 75);
+    margin: 10px auto;
+}
+
+h1, h2, h3 {
+    padding: 10px;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+li{
+    padding-left: 10px;
+
+}
+.bluetouch img {
+    border: 2px solid #B5D3E7;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+img {
+    position: static;
+}
