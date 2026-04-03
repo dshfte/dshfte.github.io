@@ -15,6 +15,10 @@
     article h1, main h2, aside h2
     { font-size: 1em; }
     aside li { font-size: .875em; }
+    /* Stack Interests columns on small screens */
+    main.col-left, aside { width: 97.917%; float: none; }
+
+
 }
 @media only screen and (max-width: 479px) {
     #mobile_menu {display: block;}
@@ -25,37 +29,183 @@
     article h1, main h2, aside h2
     { font-size: 1em; }
     aside li { font-size: .875em; }
+    /* Stack Interests columns on small screens */
+    main.col-left, aside { width: 97.917%; float: none; }
+
+
 }
 
 /* the style for the body */
 body {
-    width: 725px;
-    background-color:rgb(150, 75, 75);
+    font-size: 1em;
+    width: 90%;
+    max-width: 1024px;
+    background-color: #999999;
     margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
-h1, h2, h3 {
+/* ===== Header Styles ===== */
+header {
+    width: 97.917%;
+    padding: 10px 1.0417%;
+    clear: both;
+    text-align: center;
+}
+
+/* ===== Main Content ===== */
+main {
+    width: 97.917%;
+    padding: 10px 1.0417%;
+    background-color: #ffffff;
+}
+
+/* ===== Two Column Float Layout (Interests Page) ===== */
+main.col-left {
+    width: 47.917%;
+    float: left;
+}
+
+aside {
+    width: 47.917%;
+    padding: 10px 1.0417%;
+    background-color: #ffffff;
+    float: right;
+}
+
+/* ===== Heading Styles ===== */
+h1 {
+    font-size: 1.75em;
+    padding: 10px;
+    color: #501414;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 10px;
+    color:#7e3232;
+}
+
+h3 {
+    font-size: 1.125em;
     padding: 10px;
 }
 
+/* 5px left and right padding to paragraph tags */
 p {
+    font-size: 1.125em;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-li{
-    padding-left: 10px;
+/* ===== Blockquote Styles ===== */
+blockquote {
+    width: 47.917%;
+    padding: 10px 1.0417%;
+}
 
+/* ===== Footer Styles ===== */
+footer {
+    font-size: .75em;
+    width: 97.917%;
+    padding: 10px 1.0417%;
+    clear: both;
+    text-align: center;
+    border-top: 1px solid #ccc;
 }
-.bluetouch img {
-    border: 2px solid #B5D3E7;
-    margin: 0;
-    padding: 0;
-    border-radius: 50px;
+
+/* ===== List Styles ===== */
+ul {
+    padding-left: 10px;
+}
+
+/* 10px left padding to all list items */
+li {
+    padding-left: 10px;
+}
+
+/* ===== Navigation Styles ===== */
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0 1em;
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: #7e3232;
+    text-decoration: none;
+}
+
+#nav_menu ul li a:hover {
+    text-decoration: underline;
+}
+
+#nav_menu ul li a.current {
+    text-decoration: none;
+}
+
+/* ===== Image Styles ===== */
+/* Blue border with rounded corners on header image only */
+/* Position attribute on image */
+.bluetouch img,
+header img {
+    border: 3px solid blue;
+    border-radius: 10px;
     position: relative;
-    right: 10px;
-    top: 10px;
+    max-width: 100%;
+    height: auto;
 }
+
 img {
     position: static;
+}
+
+
+/* ===== Lab 4 Media Enhancements ===== */
+.site-logo {
+    max-width: 350px;      /* keeps the logo from exceeding its native layout size */
+    width: 100%;           /* responsive */
+    height: auto;
+    border-radius: 18px;   /* rounded corners */
+    display: inline-block;
+}
+
+/* A plain image class for the Occupation page (no rollover, no rounded corners) */
+.plain-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+/* Make embedded video responsive */
+.responsive-video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+
+
+/* ===== Interests Page Two Column Layout (flex) ===== */
+.two-column{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+.two-column .column{
+    flex: 1 1 0;
+}
+.two-column img{
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 767px){
+    .two-column{ flex-direction: column; }
 }
