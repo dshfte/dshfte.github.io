@@ -1,0 +1,44 @@
+
+/* Simple SlickNav-compatible styling */
+.slicknav_menu {
+    display: none;
+    background: #173d2b;
+    padding: .5em;
+}
+
+.slicknav_btn {
+    display: inline-block;
+    background: #1f7a4d;
+    color: white;
+    padding: .7em 1em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slicknav_nav {
+    list-style: none;
+    padding: 0;
+    margin: .5em 0 0;
+}
+
+.slicknav_nav li {
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.slicknav_nav a {
+    color: white;
+    display: block;
+    padding: .8em;
+    text-decoration: none;
+}
+
+.slicknav_nav a:hover {
+    background: #45a36b;
+}
+
+@media only screen and (max-width: 760px) {
+    .slicknav_menu {
+        display: block;
+    }
+}

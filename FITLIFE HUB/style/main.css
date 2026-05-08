@@ -1,0 +1,331 @@
+
+/* Derrick Gardner Jr. | FitLife Hub Main CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2a24;
+    background: #f7faf7;
+}
+
+.top-bar {
+    background: linear-gradient(135deg, #1f7a4d, #45a36b);
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.logo {
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    margin: .3em 0 0;
+}
+
+#nav_menu {
+    background: #173d2b;
+}
+
+#nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nav_menu li {
+    margin: 0;
+}
+
+#nav_menu a {
+    color: white;
+    display: block;
+    padding: 1em 1.3em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav_menu a:hover {
+    background: #45a36b;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.hero {
+    min-height: 380px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(31, 122, 77, .82), rgba(31, 122, 77, .82)), url("../images/gym.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 3em;
+    color: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: .3em;
+}
+
+.button,
+button {
+    display: inline-block;
+    background: #1f7a4d;
+    color: white;
+    padding: .8em 1.2em;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background: #145234;
+}
+
+.secondary-button {
+    background: #555;
+}
+
+.intro-section,
+.featured-tip,
+.page-title,
+.form-section,
+.media-box,
+.card,
+.workout-card,
+.tips-list article {
+    background: white;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.card-grid {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 260px;
+}
+
+.workout-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    background: white;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+th,
+td {
+    border: 1px solid #bbb;
+    padding: .8em;
+    text-align: left;
+}
+
+th {
+    background: #1f7a4d;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #eef7f0;
+}
+
+tfoot td {
+    background: #d9f0df;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.tips-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 1em auto;
+    border-radius: 14px;
+}
+
+audio {
+    width: 100%;
+}
+
+.note {
+    font-size: .95em;
+    color: #555;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: .8em;
+    margin-top: .3em;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#formMessage {
+    font-weight: bold;
+    color: #b00020;
+}
+
+.submit-message {
+    text-align: center;
+    padding: 3em;
+}
+
+footer {
+    background: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+/* Media Query 1 */
+@media only screen and (max-width: 900px) {
+    .hero h1 {
+        font-size: 2.4em;
+    }
+
+    .tips-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media Query 2 */
+@media only screen and (max-width: 760px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .hero {
+        padding: 2em;
+    }
+}
+
+/* Media Query 3 */
+@media only screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        font-size: 1.8em;
+    }
+
+    th,
+    td {
+        padding: .6em;
+        font-size: .9em;
+    }
+}
+
+/* Media Query 4 */
+@media only screen and (max-width: 470px) {
+    main {
+        width: 96%;
+        padding: 1em 0;
+    }
+
+    .hero {
+        min-height: 280px;
+        padding: 1.2em;
+    }
+
+    .hero h1 {
+        font-size: 1.7em;
+    }
+
+    .card,
+    .workout-card,
+    .page-title,
+    .form-section,
+    .media-box,
+    .tips-list article {
+        padding: 1em;
+    }
+
+    .meal-table {
+        font-size: .85em;
+    }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
